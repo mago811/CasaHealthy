@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+            <img class="logoCasaHealthy" src="../img/logo.png" alt="Logo Casa Healthy"></a>
+        </div>
+            <nav>
+                <ul class="navBar">
+                    <li class="section">
+                        <a class="menu" href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="section">
+                        <a class="menu" href="../pages/certificacion.html">Certificación</a>
+                    </li>
+                    <li class="section">
+                        <a class="menu" href="../pages/calidad.html">Calidad</a>
+                    </li>
+                    <li class="section">
+                        <a class="menu" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="section">
+                        <a class="buttonOrange" href="../pages/marketplace.html">Marketplace</a>
+                    </li>
+                    <li class="section">
+                        <a class="buttonGreenLight" href="../pages/appHome.html">Ingresar</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+    <section>
+        <h2 class="titleContact">Dejanos tu consulta y nos contactaremos a la brevedad.</h2>
+		<article class="articleContact">
+			<form class="form">
+                <div class="name">
+                    <label for="name">Ingrese su nombre: </label>
+                    <input type="text" name="name" placeholder="Juan Pérez" />
+                </div>
+                <div class="email">
+				<label for="email">Ingrese su correo electrónico: </label>
+				<input type="email" placeholder="usuario@dominio.com" name="email">
+                </div>
+                <div>
+				<label for="observaciones">Ingrese su mensaje o consulta:</label> 
+				<textarea name="observaciones" placeholder="Quisiera realizar una consulta sobre..."></textarea>
+                </div>
+				<div><p>¿Cual es su interés?</p>
+					<input title="compra" type="radio" name="side" value="compra"> Comprar
+					<input title="venta" type="radio" name="side" value="venta"> Vender
+				</div>
+                <div class="barrio">
+				<p>Barrio de preferencia</p>
+				<select title="barrio" name="barrio" id="barrio"> 
+					<option value="nordelta">Nordelta</option>
+					<option value="puertosEscobar">Puertos de Escobar</option>
+					<option value="canton">El Cantón</option>
+                    <option value="otro">Otro...</option>
+				</select>
+                </div>
+				<div class="newsletter">
+                Quiero que me mantengan actualizado sobre las últimas novedades y recibir beneficios exclusivos <input type="checkbox" title="newsletter" name="cehck" value="1">
+                </div>
+				<input type="submit" value="Enviar">
+			</form>
+		</article>
+	</section>
+    </main>
+    <footer class="footer">
+        <div>
+            <p>Redes sociales</p>
+            <ul>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
