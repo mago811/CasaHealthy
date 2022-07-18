@@ -38,7 +38,7 @@ body {
     grid-template-rows: 1fr 10fr 1fr; 
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #191919;
-    background-image: url(/Casa\ Healthy/img/gradientbackground.png);
+    background-image: url(/img/gradientbackground.png);
     background-attachment: local;
     background-position: top;
     background-repeat: no-repeat;
