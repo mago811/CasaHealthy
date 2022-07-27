@@ -1,0 +1,11 @@
+cd C://Users/mtartara/Desktop/Code/Casa_Healthy/CasaHealthy
+
+git init
+
+git add .
+
+git commit -m "COMENTARIO"
+
+git remote add origin https://github.com/mago811/CasaHealthy.git
+
+git push -u origin master
