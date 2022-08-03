@@ -1,1 +1,226 @@
-ul{list-style:none}ul li{font-size:20px}ul li a{text-decoration:none}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,300;1,600&display=swap');
+/* Se importan fuentes Roboto y Open Sans y se llaman de la siguiente manera:
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Open Sans', sans-serif;
+
+Color Naranja para botones y fondos
+rgb(255,97,66)
+
+Color Verde oscuro para botones y fondos
+rgb(19,39,22)
+
+Color Verde claro para botones y fondos
+rgb(226,239,208)
+
+Color Gris Oscuro para fondo
+#191919
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile First */
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    grid-template-rows: 1fr 10fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #191919;
+    background-image: url(/img/gradientbackground.png);
+    background-attachment: local;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header {
+    background: rgba(255, 255, 255);
+    left: 0;
+    padding: 10px 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.navBar {
+    display: flex;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.logoCasaHealthy {
+    width: 250px;
+}
+
+a.menu{
+    text-decoration: none;
+    color: black;
+}
+
+a.menu:hover {
+    opacity: 0.75;
+}
+
+.buttonGreenLight {
+    background-color: rgb(226,239,208);
+    color: rgb(19,39,22);
+    padding: 0.5vh;
+    align-items: center;
+    align-content: center;
+    border-radius: 24px;
+    text-decoration: none;
+}
+
+.buttonGreenLight:hover {
+    opacity: 0.85;
+}
+
+.buttonGreenDark {
+    background-color: rgb(19,39,22);
+    color: rgb(226,239,208);
+
+}
+
+.buttonOrange {
+    background-color: rgb(255,97,66);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5vh;
+    align-items: center;
+    align-content: center;
+    border-radius: 24px;
+}
+
+.buttonWhite {
+    background-color: white;
+    color: rgb(255,97,66);
+    width: 48%;
+    border: 1px transparent;
+    border-radius: 0.9cm;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
+}
+
+.buttonWhiteLink {
+    text-decoration: none;
+    color: rgb(255,97,66);
+    font-weight: bold;
+}
+
+.buttonWhite:hover {
+    opacity: 0.85;
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+    grid-area: main;
+    margin-top: 20px;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mainHeader {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.boxOne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.cardOne {
+    background-color: rgb(255,97,66);
+    color: white;
+    border: 70px solid rgb(255,97,66);
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.imgBoxOne {
+    border: 1px transparent;
+    border-radius: 20px;
+    align-items: flex-end;
+}
+
+.boxModeling {
+    color: black;
+    padding: 40px;
+    border: 10px solid orange;
+    margin-right: 350px;
+    margin-top: 40px;
+    margin-left: 350px;
+}
+
+.footer {
+    background-color: #191919;
+    color: rgb(226,239,208);
+    grid-area: footer;
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+    .body {
+        background-color: #191919;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .navBar {
+        display: flex;
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase; 
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+
+/* Contacto */
+
+.articleContact {
+    background-image: url("../img/backgroundImgContacto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    background-color: rgb(226,239,208);
+    color: rgb(19,39,22);
+    width: 40%;
+}
